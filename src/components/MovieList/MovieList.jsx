@@ -1,6 +1,3 @@
-/* eslint-disable max-len */
-
-import React from 'react';
 import './MovieList.scss';
 import { MovieCard } from '../MovieCard';
 
