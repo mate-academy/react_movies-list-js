@@ -1,5 +1,13 @@
-import './MovieList.scss';
+/* eslint-disable max-len */
 
-export const MovieList = () => (
-  <>Put the list here</>
+import React from 'react';
+import './MovieList.scss';
+import { MovieCard } from '../MovieCard';
+
+export const MovieList = ({ movies }) => (
+  <div className="movies">
+    {movies.map(movie => (
+      <MovieCard movie={movie} key={movie.imdbId} />
+    ))}
+  </div>
 );
