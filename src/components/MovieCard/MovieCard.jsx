@@ -3,10 +3,11 @@ import './MovieCard.scss';
 export const MovieCard = ({ movie }) => (
   <>
     <div className="card-image">
-      <figure
+      <img
         className="image is-4by3"
         data-cy="MovieImage"
         src={movie.imgUrl}
+        alt="Film logo"
       />
     </div>
     <div className="card-content">
