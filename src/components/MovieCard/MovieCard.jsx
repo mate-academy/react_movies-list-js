@@ -12,6 +12,7 @@ export const MovieCard = ({ movie }) => (
           data-cy="MovieImage"
         />
       </figure>
+
     </div>
     <div className="card-content">
       <div className="media">
