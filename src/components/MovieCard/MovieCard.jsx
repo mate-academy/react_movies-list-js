@@ -7,7 +7,7 @@ export const MovieCard = ({ movie }) => (
         <img
           data-cy="MovieImage"
           src={movie.imgUrl}
-          alt="Film logo"
+          alt={`${movie.title} logo`}
         />
       </figure>
     </div>
