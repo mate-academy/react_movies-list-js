@@ -4,7 +4,6 @@ export const MovieCard = ({ movie }) => (
   <div
     className="card"
     data-cy="Movie"
-    key={movie.imdbId}
   >
     <div className="card-image">
       <figure className="image is-4by3">
