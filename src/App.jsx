@@ -5,7 +5,7 @@ import { MovieList } from './components/MovieList';
 export const App = () => (
   <div className="page">
     <div className="page-content">
-      <MovieList movieList={movieList} />
+      <MovieList movies={movieList} />
     </div>
 
     <div className="sidebar" data-cy="Sidebar">
