@@ -1,7 +1,7 @@
-/* eslint-disable react/jsx-filename-extension */
+
 import React from 'react';
 import { mount } from '@cypress/react';
-import { MovieList } from './MovieList';
+import { MovieList } from './MoviesList';
 import movies from '../../api/movies.json';
 
 describe('MoviesList component', () => {
