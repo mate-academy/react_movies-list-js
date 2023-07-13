@@ -1,5 +1,14 @@
+/* eslint-disable max-len */
+import { MovieCard } from '../MovieCard';
 import './MovieList.scss';
 
-export const MovieList = () => (
-  <>Put the list here</>
+export const MovieList = ({ movies }) => (
+  <ul className="movies">
+    {movies.map(movie => (
+      <MovieCard
+        key={movie.imdbId}
+        movie={movie}
+      />
+    ))}
+  </ul>
 );
