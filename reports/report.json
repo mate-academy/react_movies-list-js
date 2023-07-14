@@ -1,0 +1,393 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-14T14:46:39.202Z",
+    "end": "2023-07-14T14:47:10.257Z",
+    "duration": 1682,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1742fb7-e841-4b78-8733-6bbb6603313e",
+      "title": "",
+      "fullFile": "src/App.spec.jsx",
+      "file": "src/App.spec.jsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1cf0cda4-322d-4857-a7ee-94c340b3d185",
+          "title": "App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should render all the movies",
+              "fullTitle": "App should render all the movies",
+              "timedOut": null,
+              "duration": 113,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('Movie').should('have.length', 5);",
+              "err": {},
+              "uuid": "75edb279-760b-411c-9bb7-c6868b5d0df8",
+              "parentUUID": "1cf0cda4-322d-4857-a7ee-94c340b3d185",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render a sidebar",
+              "fullTitle": "App should render a sidebar",
+              "timedOut": null,
+              "duration": 25,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('Sidebar').should('have.text', 'Sidebar will be here');",
+              "err": {},
+              "uuid": "47ccee38-309b-42d7-bf4e-9ec168956a4c",
+              "parentUUID": "1cf0cda4-322d-4857-a7ee-94c340b3d185",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "75edb279-760b-411c-9bb7-c6868b5d0df8",
+            "47ccee38-309b-42d7-bf4e-9ec168956a4c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 138,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a85e24b8-76ad-4d22-82ac-405c4b13e781",
+      "title": "",
+      "fullFile": "src/components/MovieCard/MovieCard.spec.jsx",
+      "file": "src/components/MovieCard/MovieCard.spec.jsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "efe64ec4-45e6-45a3-aacd-685db91160f7",
+          "title": "MovieCard component",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should render a movie title",
+              "fullTitle": "MovieCard component should render a movie title",
+              "timedOut": null,
+              "duration": 45,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('MovieTitle').should('have.text', 'Movie title');",
+              "err": {},
+              "uuid": "bedb36f9-442f-4b1d-934d-dbbe91c3e7b3",
+              "parentUUID": "efe64ec4-45e6-45a3-aacd-685db91160f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render a movie description",
+              "fullTitle": "MovieCard component should render a movie description",
+              "timedOut": null,
+              "duration": 27,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('MovieDescription').should('have.text', 'Some description');",
+              "err": {},
+              "uuid": "696adf09-74a7-4a9e-b9f6-f4a88129163f",
+              "parentUUID": "efe64ec4-45e6-45a3-aacd-685db91160f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should have a link to IMDb page",
+              "fullTitle": "MovieCard component should have a link to IMDb page",
+              "timedOut": null,
+              "duration": 33,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('MovieLink').should('have.attr', 'href', 'https://www.imdb.com/title/tt1375666');",
+              "err": {},
+              "uuid": "b7a4772d-9201-4f2e-9a67-c938d8f5d8dc",
+              "parentUUID": "efe64ec4-45e6-45a3-aacd-685db91160f7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should have a movie poster",
+              "fullTitle": "MovieCard component should have a movie poster",
+              "timedOut": null,
+              "duration": 30,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('MovieImage').should('have.attr', 'src', 'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg');",
+              "err": {},
+              "uuid": "03a6fd75-d47b-497b-9221-679382aee650",
+              "parentUUID": "efe64ec4-45e6-45a3-aacd-685db91160f7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bedb36f9-442f-4b1d-934d-dbbe91c3e7b3",
+            "696adf09-74a7-4a9e-b9f6-f4a88129163f",
+            "b7a4772d-9201-4f2e-9a67-c938d8f5d8dc",
+            "03a6fd75-d47b-497b-9221-679382aee650"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 135,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f84d0a28-cd39-4a5d-92d6-0b24cac94438",
+      "title": "",
+      "fullFile": "src/components/MovieList/MovieList.spec.jsx",
+      "file": "src/components/MovieList/MovieList.spec.jsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "24ee9f30-340e-46fd-bf49-0974e667ae5e",
+          "title": "MoviesList component",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should render a card per each movie",
+              "fullTitle": "MoviesList component should render a card per each movie",
+              "timedOut": null,
+              "duration": 37,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Object(_cypress_react__WEBPACK_IMPORTED_MODULE_1__[\"mount\"])( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__[\"jsxDEV\"])(_MovieList__WEBPACK_IMPORTED_MODULE_2__[\"MovieList\"], {\n  movies: _api_movies_json__WEBPACK_IMPORTED_MODULE_3__\n}, void 0, false, {\n  fileName: _jsxFileName,\n  lineNumber: 9,\n  columnNumber: 11\n}, undefined));\ncy.getByDataCy('Movie').should('have.length', 5);",
+              "err": {},
+              "uuid": "0139ce1a-e554-4fd9-bfce-153909b15d55",
+              "parentUUID": "24ee9f30-340e-46fd-bf49-0974e667ae5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should put movies in correct order",
+              "fullTitle": "MoviesList component should put movies in correct order",
+              "timedOut": null,
+              "duration": 57,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Object(_cypress_react__WEBPACK_IMPORTED_MODULE_1__[\"mount\"])( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__[\"jsxDEV\"])(_MovieList__WEBPACK_IMPORTED_MODULE_2__[\"MovieList\"], {\n  movies: _api_movies_json__WEBPACK_IMPORTED_MODULE_3__\n}, void 0, false, {\n  fileName: _jsxFileName,\n  lineNumber: 15,\n  columnNumber: 11\n}, undefined));\ncy.getByDataCy('MovieTitle').eq(0).should('have.text', 'Inception');\ncy.getByDataCy('MovieTitle').eq(4).should('have.text', 'The Holiday');",
+              "err": {},
+              "uuid": "cb1f88ff-0381-4f60-88af-aa749134f046",
+              "parentUUID": "24ee9f30-340e-46fd-bf49-0974e667ae5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should render no movies if received an empty array",
+              "fullTitle": "MoviesList component should render no movies if received an empty array",
+              "timedOut": null,
+              "duration": 20,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Object(_cypress_react__WEBPACK_IMPORTED_MODULE_1__[\"mount\"])( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__[\"jsxDEV\"])(_MovieList__WEBPACK_IMPORTED_MODULE_2__[\"MovieList\"], {\n  movies: []\n}, void 0, false, {\n  fileName: _jsxFileName,\n  lineNumber: 22,\n  columnNumber: 11\n}, undefined));\ncy.getByDataCy('Movie').should('not.exist');",
+              "err": {},
+              "uuid": "7cd7fdd8-b9db-4491-8005-920784b827b6",
+              "parentUUID": "24ee9f30-340e-46fd-bf49-0974e667ae5e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0139ce1a-e554-4fd9-bfce-153909b15d55",
+            "cb1f88ff-0381-4f60-88af-aa749134f046",
+            "7cd7fdd8-b9db-4491-8005-920784b827b6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 114,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "67c559f1-87b1-4442-89eb-dfc8e1221b90",
+      "title": "",
+      "fullFile": "cypress/integration/page.spec.js",
+      "file": "cypress/integration/page.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "31cda899-bd37-4eab-b950-8c4ae30f7f09",
+          "title": "Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should be visitable",
+              "fullTitle": "Page should be visitable",
+              "timedOut": null,
+              "duration": 1295,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');",
+              "err": {},
+              "uuid": "b2be128c-3394-45ad-b25b-21f24e9c8cd3",
+              "parentUUID": "31cda899-bd37-4eab-b950-8c4ae30f7f09",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b2be128c-3394-45ad-b25b-21f24e9c8cd3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1295,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "raw_reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
