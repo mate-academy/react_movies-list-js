@@ -1,10 +1,16 @@
 import './MovieList.scss';
-import { MovieCard } from '../MovieCard/MovieCard';
+import { MovieCard } from '../MovieCard';
 
-export const MovieList = ({ movies }) => (
+export const MoviesList = ({ movies }) => (
   <div className="movies">
     {movies.map(movie => (
-      <MovieCard movie={movie} key={movie.ImdbId} />
+      !movie
+        ? (
+          <p style={{ paddingBlock: '50%' }}>
+            No information about this movie.
+          </p>
+        )
+        : <MovieCard movie={movie} key={movie.ImdbId} />
     ))}
   </div>
 );
