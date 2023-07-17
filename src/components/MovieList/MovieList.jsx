@@ -3,14 +3,8 @@ import { MovieCard } from '../MovieCard';
 
 export const MoviesList = ({ movies }) => (
   <div className="movies">
-    {movies.map(movie => (
-      !movie
-        ? (
-          <p style={{ paddingBlock: '50%' }}>
-            No information about this movie.
-          </p>
-        )
-        : <MovieCard movie={movie} key={movie.ImdbId} />
+    {movies.length > 0 && movies.map(movie => (
+      <MovieCard movie={movie} key={movie.ImdbId} />
     ))}
   </div>
 );
