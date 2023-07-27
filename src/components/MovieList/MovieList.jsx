@@ -1,5 +1,8 @@
 import './MovieList.scss';
+import { MovieCard } from '../MovieCard';
 
 export const MovieList = () => (
-  <>Put the list here</>
+  <div className='movies'>
+    <MovieCard />
+  </div>
 );
