@@ -1,12 +1,12 @@
-/* eslint-disable max-len */
-import React from 'react';
 import './App.scss';
+import { MovieList } from './components/MovieList';
 import moviesFromServer from './api/movies.json';
-import MoviesList from './components/MovieList/MovieList';
 
 export const App = () => (
   <div className="page">
-    <MoviesList movies={moviesFromServer} />
+    <div className="page-content">
+      <MovieList movies={moviesFromServer} />
+    </div>
 
     <div className="sidebar" data-cy="Sidebar">
       Sidebar will be here
