@@ -1,7 +1,6 @@
 import './MovieCard.scss';
 
-
-export const MovieCard = ( {movie} ) => (
+export const MovieCard = ({ movie }) => (
   <>
     <div
       className="card"
