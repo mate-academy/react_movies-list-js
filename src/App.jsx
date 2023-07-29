@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+import moviesFromServer from './api/movies.json';
 
 import './App.scss';
 import { MovieList } from './components/MovieList';
@@ -6,7 +7,7 @@ import { MovieList } from './components/MovieList';
 export const App = () => (
   <div className="page">
     <div className="page-content">
-      <MovieList />
+      <MovieList movies={moviesFromServer} />
       {/* <div className="movies">
         <div className="card" data-cy="Movie">
           <div className="card-image">
