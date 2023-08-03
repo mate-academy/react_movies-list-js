@@ -3,7 +3,7 @@ import './MovieCard.scss';
 export const MovieCard = ({
   movie: { title, description, imgUrl, imdbUrl },
 }) => (
-  <li className="card" data-cy="Movie">
+  <div className="card" data-cy="Movie">
     <div className="card-image">
       <figure className="image is-4by3">
         <img
@@ -44,5 +44,5 @@ export const MovieCard = ({
         </a>
       </div>
     </div>
-  </li>
+  </div>
 );
