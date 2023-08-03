@@ -1,11 +1,11 @@
 import './MovieCard.scss';
 
 export const MovieCard = ({ movie }) => {
-  const poster = movie.imgUrl;
-  const imdbPage = movie.imdbUrl;
   const {
     title,
     description,
+    imgUrl: poster,
+    imdbUrl: imdbPage,
   } = movie;
 
   return (
@@ -15,7 +15,7 @@ export const MovieCard = ({ movie }) => {
           <img
             data-cy="MovieImage"
             src={poster}
-            alt="Film logo"
+            alt={title}
           />
         </figure>
       </div>
@@ -43,6 +43,8 @@ export const MovieCard = ({ movie }) => {
           <a
             href={imdbPage}
             data-cy="MovieLink"
+            rel="noreferrer"
+            target="_blank"
           >
             IMDB
           </a>
