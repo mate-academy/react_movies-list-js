@@ -9,7 +9,7 @@ export const MovieCard = ({ movie }) => {
 
   return (
     <div
-      className="MovieCard"
+      className="movies"
     >
       <div className="card" data-cy="Movie">
         <div className="card-image">
