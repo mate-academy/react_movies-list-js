@@ -1,1 +1,31 @@
-// 
+.Card {
+  max-width: 230px;
+  
+  .MoviesPoster {
+    height: 190px;
+    width: 219px;
+    margin-bottom: 24px;
+  }
+  
+  .FilmTitle {
+    color: #363636;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.13;
+    margin-left: 15px;
+  }
+  
+  .Film_container {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .IMDB_Photo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .MovieDescription {
+    width: 202px;
+  }
+}
