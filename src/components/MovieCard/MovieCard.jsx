@@ -8,7 +8,7 @@ export const MovieCard = ({
     imdbUrl,
   },
 }) => (
-  <div className="card" data-cy="Movie">
+  <li className="card" data-cy="Movie">
     <div className="card-image">
       <figure className="image is-4by3">
         <img
@@ -47,5 +47,5 @@ export const MovieCard = ({
         </a>
       </div>
     </div>
-  </div>
+  </li>
 );
