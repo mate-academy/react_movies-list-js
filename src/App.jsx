@@ -2,7 +2,7 @@
 
 import './App.scss';
 import movies from './api/movies.json';
-import { MoviesList } from './components/MovieList';
+import { MoviesList } from './components/MoviesList';
 
 export const App = () => (
   <div className="page">
