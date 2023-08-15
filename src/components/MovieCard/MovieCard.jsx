@@ -1,26 +1,51 @@
+// import { spawn } from 'child_process';
 import './MovieCard.scss';
 
-export const MovieCard = ({ movies }) => (
-  <div className="Card">
-    <div className="card-image">
+export const MovieCard = ({ movie }) => (
+  <div
+    data-cy="Movie"
+    className="Card"
+  >
+    <div
+      className="card-image"
+    >
       <img
         className="MoviesPoster"
         data-cy="MovieImage"
         alt="Film logo"
-        src={movies.imgUrl}
+        src={movie.imgUrl}
       />
     </div>
 
     <div className="Film_container">
-      <img src="images/imdb-logo.jpeg" alt="imdb" className="IMDB_Photo" />
+      <img
+        src="images/imdb-logo.jpeg"
+        alt="imdb"
+        className="IMDB_Photo"
+      />
 
-      <p className="FilmTitle">{movies.title}</p>
+      <p
+        data-cy="MovieTitle"
+        className="FilmTitle"
+      >
+        {movie.title}
+      </p>
     </div>
 
-    <div className="MovieDescription">{movies.description}</div>
+    <div
+      data-cy="MovieDescription"
+      className="MovieDescription"
+    >
+      {movie.description}
+    </div>
 
     <p>
-      <a href={movies.imdbUrl}>IMDB</a>
+      <a
+        data-cy="MovieLink"
+        href={movie.imdbUrl}
+      >
+        IMDB
+      </a>
     </p>
   </div>
 );
