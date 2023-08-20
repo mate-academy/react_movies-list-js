@@ -1,1 +1,12 @@
-// 
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+
+  // Remove Default Styles for List
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+
+}
+
