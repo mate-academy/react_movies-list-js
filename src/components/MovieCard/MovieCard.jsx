@@ -1,6 +1,13 @@
 import './MovieCard.scss';
 
-export function MovieCard({ title, description, imgUrl, imdbUrl }) {
+export function MovieCard({ movie }) {
+  const {
+    title,
+    description,
+    imgUrl,
+    imdbUrl,
+  } = movie;
+
   return (
     <div className="card" data-cy="Movie">
       <div className="card-image">
@@ -17,7 +24,7 @@ export function MovieCard({ title, description, imgUrl, imdbUrl }) {
         <div className="media">
           <div className="media-left">
             <figure className="image is-48x48">
-              <img src="../../../public/images/imdb-logo.jpeg" alt="imdb" />
+              <img src="images/imdb-logo.jpeg" alt="imdb" />
             </figure>
           </div>
 
