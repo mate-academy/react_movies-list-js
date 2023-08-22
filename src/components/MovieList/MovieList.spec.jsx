@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { mount } from '@cypress/react';
-import { MovieList } from './MovieList';
 import movies from '../../api/movies.json';
+import { MovieList } from './MovieList';
 
 describe('MoviesList component', () => {
   it('should render a card per each movie', () => {
