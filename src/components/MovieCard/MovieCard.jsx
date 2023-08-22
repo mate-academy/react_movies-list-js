@@ -1,12 +1,12 @@
 import './MovieCard.scss';
 
-export const MovieCard = ({ movie }) => {
+export const MovieCard = ({ movieInfo }) => {
   const {
     title,
     description,
     imgUrl,
     imdbUrl,
-  } = movie;
+  } = movieInfo;
 
   return (
     <div className="card" data-cy="Movie">
