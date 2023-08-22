@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import movies from './api/movies.json';
 import './App.scss';
 import { MovieList } from './components/MovieList';

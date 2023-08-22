@@ -3,7 +3,7 @@ import { MovieCard } from '../MovieCard';
 
 export const MovieList = ({ movies }) => (
   <div className="movies">
-    {movies.map(movie => (
+    {movies.length > 0 && movies.map(movie => (
       <MovieCard movie={movie} key={movie.imdbId} />
     ))}
   </div>
