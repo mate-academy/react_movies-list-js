@@ -5,7 +5,7 @@ export const MovieCard = ({ movie }) => {
     title,
     description,
     imgUrl,
-    imdbUrl
+    imdbUrl,
   } = movie;
 
   return (
