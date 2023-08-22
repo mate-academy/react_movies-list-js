@@ -43,6 +43,8 @@ export const MovieCard = ({ movie }) => {
           <a
             href={imdbUrl}
             data-cy="MovieLink"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             IMDB
           </a>
