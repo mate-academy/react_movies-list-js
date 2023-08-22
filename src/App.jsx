@@ -1,4 +1,3 @@
-
 import './App.scss';
 import { MovieList } from './components/MovieList';
 import moviesFromServer from './api/movies.json';
