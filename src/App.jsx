@@ -1,6 +1,6 @@
 import './App.scss';
 import { MovieList } from './components/MovieList';
-import { Sidebar } from './components/Sidebar/Sidebar';
+import { Sidebar } from './components/Sidebar';
 import moviesFromServer from './api/movies.json';
 
 export const App = () => (
