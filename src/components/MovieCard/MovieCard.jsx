@@ -30,14 +30,14 @@ export const MovieCard = ({ movie }) => {
 
           <div className="media-content">
             <p className="title is-8" data-cy="MovieTitle">
-              { title }
+              {title}
             </p>
           </div>
         </div>
 
         <div className="content">
           <p data-cy="MovieDescription">
-            { description }
+            {description}
           </p>
 
           <a
