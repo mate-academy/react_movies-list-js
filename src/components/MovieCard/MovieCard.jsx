@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-
 import './MovieCard.scss';
 
 export const MovieCard = ({ movie }) => {
