@@ -42,7 +42,7 @@ export const MovieCard = ({ movie }) => (
           rel="noopener noreferrer"
           data-cy="MovieLink"
         >
-          {movie.imdbId}
+          IMDB
         </a>
       </div>
     </div>
