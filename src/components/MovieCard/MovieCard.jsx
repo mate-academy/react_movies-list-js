@@ -5,13 +5,12 @@ export const MovieCard = ({ movie }) => (
     className="card"
     data-cy="Movie"
   >
-    {movie.title}
 
     <div className="card-image">
       <figure className="image is-4by3">
         <img
           data-cy="MovieImage"
-          src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
+          src={movie.imgUrl}
           alt="Film logo"
         />
       </figure>
@@ -27,23 +26,22 @@ export const MovieCard = ({ movie }) => (
 
         <div className="media-content">
           <p className="title is-8" data-cy="MovieTitle">
-            Inception
+            {movie.title}
           </p>
         </div>
       </div>
 
       <div className="content">
         <p data-cy="MovieDescription">
-          Follows the lives of eight very different couples in dealing with
-          their love lives in various loosely interrelated tales all set
-          during a frantic month before Christmas in London, England.
+          {movie.description}
         </p>
 
         <a
-          href="https://www.imdb.com/title/tt1375666"
+          href={movie.imdbUrl}
+          // href="https://www.imdb.com/title/tt1375666"
           data-cy="MovieLink"
         >
-          IMDB
+          {movie.imdbId}
         </a>
       </div>
     </div>
