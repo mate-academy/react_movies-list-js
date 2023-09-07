@@ -9,7 +9,7 @@ export const MovieCard = ({
         <img
           data-cy="MovieImage"
           src={imgUrl}
-          alt="Film logo"
+          alt={`${title} logo`}
         />
       </figure>
     </div>
@@ -37,6 +37,8 @@ export const MovieCard = ({
         <a
           href={imdbUrl}
           data-cy="MovieLink"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           IMDB
         </a>
