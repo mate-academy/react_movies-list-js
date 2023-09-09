@@ -1,7 +1,7 @@
 import './MovieCard.scss';
 
 export const MovieCard = ({ movie }) => {
-  const { title, description, imgUrl, imdbUrl, imdbId } = movie;
+  const { title, description, imgUrl, imdbUrl } = movie;
 
   return (
     <div className="card" data-cy="Movie">
@@ -36,11 +36,12 @@ export const MovieCard = ({ movie }) => {
           </p>
 
           <a
+            target="_blank"
+            rel="noopener noreferrer"
             href={imdbUrl}
             data-cy="MovieLink"
-            target="blanc"
           >
-            {imdbId}
+            IMDB
           </a>
         </div>
       </div>
