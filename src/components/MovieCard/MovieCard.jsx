@@ -7,7 +7,7 @@ export const MovieCard = ({ movie }) => (
         className="image is-4by3"
       >
         <img
-          alt="Film logo"
+          alt={movie.title}
           src={movie.imgUrl}
           data-cy="MovieImage"
         />
