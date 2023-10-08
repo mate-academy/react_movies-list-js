@@ -10,7 +10,7 @@ export const App = () => (
       <MovieList movies={moviesFromServer} />
     </div>
     <div className="sidebar" data-cy="Sidebar">
-      {/* it won't let me leave am empty div */}
+      {'Sidebar will be here'}
     </div>
   </div>
 );
