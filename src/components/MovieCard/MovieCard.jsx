@@ -47,5 +47,6 @@ export const MovieCard = ({ movie }) => (
           </a>
         </div>
       </div>
-    </div></>
+    </div>
+  </>
 );
