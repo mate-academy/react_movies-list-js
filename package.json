@@ -33,7 +33,8 @@
     "mochawesome-report-generator": "^6.2.0",
     "node-sass": "^6.0.1",
     "stylelint": "^13.13.1",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.3",
+    "postcss": "^8.4.13"
   },
   "scripts": {
     "start": "mate-scripts start -l",
@@ -63,7 +64,7 @@
     "_comment": "Replace 'react' with 'reactTypescript' if you want use React with Typescript",
     "projectType": "react",
     "tests": {
-      "_comment": "Add `cypressComponents: true` to enable component tests",
+      "_comment": "Add cypressComponents: true to enable component tests",
       "cypressComponents": true
     }
   }
