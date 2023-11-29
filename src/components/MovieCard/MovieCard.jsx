@@ -33,6 +33,7 @@ export const MovieCard = ({ movie }) => (
       <div className="content">
         <p data-cy="MovieDescription">
           {movie.description}
+
         </p>
 
         <a
