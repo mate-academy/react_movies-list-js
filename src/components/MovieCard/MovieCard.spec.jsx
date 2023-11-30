@@ -19,6 +19,7 @@ describe('MovieCard component', () => {
   });
 
   it('should render a movie title', () => {
+    console.log(cy.getByDataCy('MovieTitle'));
     cy.getByDataCy('MovieTitle').should('have.text', 'Movie title');
   });
 
