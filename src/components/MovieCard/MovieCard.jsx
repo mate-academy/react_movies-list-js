@@ -33,9 +33,7 @@ export const MovieCard = ({ movie }) => (
 
         <div className="content">
           <p data-cy="MovieDescription">
-            Follows the lives of eight very different couples in dealing with
-            their love lives in various loosely interrelated tales all set
-            during a frantic month before Christmas in London, England.
+            {movie.description}
           </p>
 
           <a
