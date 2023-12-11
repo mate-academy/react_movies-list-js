@@ -1,1 +1,21 @@
-// add styles here
+.card {
+  padding-top: 20px;
+
+  &-image img {
+    object-fit: contain;
+  }
+}
+
+.content {
+  text-align: justify;
+}
+
+.media {
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 18px;
+}
