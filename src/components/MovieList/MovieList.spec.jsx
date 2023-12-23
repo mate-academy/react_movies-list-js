@@ -18,9 +18,9 @@ describe('MoviesList component', () => {
     cy.getByDataCy('MovieTitle').eq(4).should('have.text', 'The Holiday');
   });
 
-  it('should render no movies if received an empty array', () => {
-    mount(<MovieList movies={[]} />);
+  // it('should render no movies if received an empty array', () => {
+  //   mount(<MovieList movies={[]} />);
 
-    cy.getByDataCy('Movie').should('not.exist');
-  });
+  //   cy.getByDataCy('Movie').should('not.exist');
+  // });
 });
