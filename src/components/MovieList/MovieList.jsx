@@ -1,12 +1,12 @@
 import './MovieList.scss';
 import { MovieCard } from '../MovieCard/MovieCard';
 
-export const MovieList = (moviesList) => {
-  const { movieList } = moviesList;
+export const MovieList = (props) => {
+  const { movies } = props;
 
   return (
     <div className="movies">
-      {movieList.map(movie => <MovieCard movie={movie} />)}
+      {movies.map(movie => <MovieCard movie={movie} key={movie.imdbId} />)}
     </div>
   );
 };
