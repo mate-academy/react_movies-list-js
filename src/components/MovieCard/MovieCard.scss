@@ -1,1 +1,7 @@
-// add styles here
+iframe {
+  display: none;
+}
+
+.card-image img {
+  object-fit: contain;
+}
