@@ -1,15 +1,17 @@
-iframe {
-  display: none;
-}
-
 .page {
   display: grid;
-  grid-template: auto / 1fr 400px;
+  grid-template-columns: 1fr 3fr 400px;
   column-gap: 20px;
   min-height: 100vh;
 }
 
-.page-content {
+.search-bar {
+  grid-column: span 4;
+  padding: 20px;
+}
+
+.main-content {
+  grid-column: span 2;
   padding: 20px;
 }
 
