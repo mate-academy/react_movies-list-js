@@ -2,13 +2,13 @@
 import { MovieCard } from '../MovieCard';
 import './MovieList.scss';
 
-export const MovieList = ({ moviesFromServer }) => (
+export const MovieList = ({ movies }) => (
   <>
     <div className="movies">
-      {moviesFromServer.length === null ? (
+      {movies.length === null ? (
         <p>not.exist</p>
       ) : (
-        moviesFromServer.map(movie => (
+        movies.map(movie => (
           <MovieCard movie={movie} key={movie.imdbId} />
         ))
       )}
