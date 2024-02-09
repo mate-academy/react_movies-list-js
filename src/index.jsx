@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import ReactDOM from 'react-dom';
 import 'bulma/css/bulma.css';
 
