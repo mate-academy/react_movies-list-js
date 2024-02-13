@@ -1,5 +1,3 @@
 import './MovieList.scss';
 
-export const MovieList = () => (
-  <>Put the list here</>
-);
+export const MovieList = () => <>Put the list here</>;
