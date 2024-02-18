@@ -6,7 +6,7 @@ import moviesFromServer from './api/movies.json';
 import { MovieList } from './components/MovieList';
 
 export const App = () => {
-  const [moviesToRend, setMoviesToRend] = useState(moviesFromServer);
+  const [moviesToRend] = useState(moviesFromServer);
   const moviesToRendVar = moviesToRend;
 
   return (
