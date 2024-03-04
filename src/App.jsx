@@ -1,4 +1,3 @@
-import React from 'react';
 import { MovieList } from './components/MovieList';
 import moviesFromServer from './api/movies.json';
 import './App.scss';
