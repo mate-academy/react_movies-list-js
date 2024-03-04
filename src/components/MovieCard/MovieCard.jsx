@@ -1,7 +1,6 @@
 import React from 'react';
-import './index';
 
-export const MovieCard = ({ movie }) => (
+const MovieCard = ({ movie }) => (
   <div className="card" data-cy="Movie">
     <div className="card-image">
       <figure className="image is-4by3">
@@ -34,3 +33,5 @@ export const MovieCard = ({ movie }) => (
     </div>
   </div>
 );
+
+export default MovieCard;
