@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { mount } from '@cypress/react';
-import { MovieCard } from './MovieCard';
+import MovieCard from './MovieCard';
 
 describe('MovieCard component', () => {
   beforeEach(() => {
