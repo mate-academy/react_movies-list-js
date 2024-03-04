@@ -7,7 +7,9 @@ import { MovieList } from './components/MovieList/MovieList';
 export const App = () => (
   <div className="page">
     <div className="page-content">
-      <MovieList moviesFromServer={moviesFromServer} />
+      {moviesFromServer.length && (
+        <MovieList moviesFromServer={moviesFromServer} />
+      )}
     </div>
 
     <div className="sidebar" data-cy="Sidebar">
