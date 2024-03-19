@@ -1,5 +1,6 @@
 import React from 'react';
-import { mount } from '@cypress/react';
+// eslint-disable-next-line import/no-unresolved
+import { mount } from '@cypress/react18';
 import { App } from './App';
 
 describe('App', () => {
