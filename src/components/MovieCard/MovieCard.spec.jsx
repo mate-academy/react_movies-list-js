@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable max-len */
 
-import React from 'react';
 import { mount } from '@cypress/react18';
+import React from 'react';
 import { MovieCard } from './MovieCard';
 
 describe('MovieCard component', () => {
