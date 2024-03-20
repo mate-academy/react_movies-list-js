@@ -1,13 +1,15 @@
 /* eslint-disable max-len */
 
 import './App.scss';
-// import moviesFromServer from './api/movies.json';
+import moviesFromServer from './api/movies.json';
+import { MovieList } from './components/MovieList/MovieList';
 
 export const App = () => (
   <div className="page">
     <div className="page-content">
       <div className="movies">
-        <div className="card" data-cy="Movie">
+        <MovieList movies={moviesFromServer} />
+        {/* <div className="card" data-cy="Movie">
           <div className="card-image">
             <figure className="image is-4by3">
               <img
@@ -15,6 +17,14 @@ export const App = () => (
                 src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
                 alt="Film logo"
               />
+              {moviesFromServer.slice(0, 1).map(movie => (
+                <img
+                  key={movie.imdbId}
+                  data-cy="MovieImage"
+                  src={movie.imgUrl}
+                  alt={movie.title}
+                />
+              ))}
             </figure>
           </div>
 
@@ -30,6 +40,11 @@ export const App = () => (
                 <p className="title is-8" data-cy="MovieTitle">
                   Inception
                 </p>
+                {moviesFromServer.slice(0, 1).map(movieTitle => (
+                  <p className="title is-8" data-cy="MovieTitle">
+                    {movieTitle.title}
+                  </p>
+                ))}
               </div>
             </div>
 
@@ -46,11 +61,19 @@ export const App = () => (
               >
                 IMDB
               </a>
+              {moviesFromServer.slice(0, 1).map(movieInfo => (
+                <>
+                  <p data-cy="MovieDescription">{movieInfo.description}</p>
+                  <a href={movieInfo.imdbUrl} data-cy="MovieLink">
+                    IMDB
+                  </a>
+                </>
+              ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="card" data-cy="Movie">
+        {/* <div className="card" data-cy="Movie">
           <div className="card-image">
             <figure className="image is-4by3">
               <img
@@ -91,7 +114,7 @@ export const App = () => (
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
 
