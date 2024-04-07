@@ -29,9 +29,7 @@ export const MovieCard = ({ movies }) => {
         </div>
 
         <div className="content">
-          <p data-cy="MovieDescription">
-            {movies.description}
-          </p>
+          <p data-cy="MovieDescription">{movies.description}</p>
 
           <a href={movies.imdbUrl} data-cy="MovieLink">
             {movies.title}

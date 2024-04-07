@@ -9,7 +9,7 @@ export const App = () => (
     <div className="page-content">
       <div className="movies">
         {moviesFromServer.map(movie => (
-          <MovieCard movies={movie} key={movie.imdbId}/>
+          <MovieCard movies={movie} key={movie.imdbId} />
         ))}
       </div>
     </div>
