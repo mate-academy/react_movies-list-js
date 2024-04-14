@@ -16,7 +16,7 @@ describe('MovieCard component', () => {
       imdbId: 'tt1375666',
     };
 
-    mount(<MovieCard movie={movie} />);
+    mount(<MovieCard movies={movie} />);
   });
 
   it('should render a movie title', () => {
