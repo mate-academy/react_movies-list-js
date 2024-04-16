@@ -1,6 +1,5 @@
-import { MovieCard } from '../MovieCard';
+import { MovieCard } from '../MovieCard/MovieCard';
 import './MovieList.scss';
-// import moviesFromServer from '../../api/movies.json';
 
 export const MovieList = ({ moviesFromServer }) => (
   <div className="movies">
