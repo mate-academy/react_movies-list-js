@@ -4,7 +4,6 @@ export const MovieCard = ({ movie }) => (
   <div className="card" data-cy="Movie">
     <div className="card-image">
       <figure className="image is-4by3">
-        {/* Проверяем, что movie существует перед доступом к его свойствам */}
         {movie && (
           <img data-cy="MovieImage" src={movie.imgUrl} alt="Film logo" />
         )}
