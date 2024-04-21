@@ -1,4 +1,4 @@
-import { MovieCard } from '../MovieCard/MovieCard';
+import { MovieCard } from '../MovieCard';
 import './MovieList.scss';
 
 export const MoveList = ({ movies }) => (
