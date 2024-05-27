@@ -1,6 +1,11 @@
-import { createRoot } from 'react-dom/client';
-import 'bulma/css/bulma.css';
+// src/index.jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'; // Переконайтеся, що шлях вірний
 
-import { App } from './App';
-
-createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
