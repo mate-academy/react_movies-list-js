@@ -7,6 +7,7 @@ export const MovieCard = ({ movie }) => (
         <figure className="image is-4by3">
           <img
             data-cy="MovieImage"
+            // eslint-disable-next-line max-len
             src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
             alt="Film logo"
           />
