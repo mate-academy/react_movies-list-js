@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+import React from 'react';
 
 import movies from './api/movies.json';
 import { MovieList } from './components/MovieList';
