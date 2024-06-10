@@ -1,1 +1,6 @@
-// add styles here
+.card {
+  &-image img {
+    object-fit: contain;
+  }
+}
+
