@@ -1,1 +1,11 @@
-// add styles here
+.card {
+  height: 600px;
+}
+
+.card-image img {
+  object-fit: contain;
+}
+
+.title {
+  font-size: 28px;
+}
