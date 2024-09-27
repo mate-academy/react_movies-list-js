@@ -17,3 +17,13 @@ You are given movies loaded from the API and initial markup. Your task is to:
 - Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
 - Open one more terminal and run tests with `npm test` to ensure your solution is correct.
 - Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_movies-list-js/) and add it to the PR description.
+
+Вам предоставляются фильмы, загруженные из API и исходной разметки. Ваша задача:
+
+Рендеринг фильмов из заданного массива MoviesFromServer (для простоты вы можете сделать это внутри приложения и разделить позже).
+Извлеките блок .movies в компонент MovieList.
+Приложение должно передавать MovieFromServer в MovieList в качестве реквизита фильмов.
+Извлеките блок .card в компонент MovieCard.
+MovieList должен передать фильм в MovieCard.
+Используйте movie.imdbId в качестве ключа.
+Сохраните все атрибуты data-cy, чтобы пройти тесты.
