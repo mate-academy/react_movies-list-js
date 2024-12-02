@@ -1,1 +1,4 @@
-// add styles here
+.card-image img {
+  // width: calc(50% - 10px);
+  object-fit: contain;
+}
