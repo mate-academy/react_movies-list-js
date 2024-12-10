@@ -106,10 +106,11 @@ module.exports = {
       },
     ],
     'max-len': [
-      'error',
+      'error', 
       {
         ignoreTemplateLiterals: true,
         ignoreComments: true,
+        ignoreUrls: true,
       },
     ],
     'no-console': 'error',

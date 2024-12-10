@@ -1,6 +1,4 @@
-/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable max-len */
-
 import React from 'react';
 import { mount } from '@cypress/react18';
 import { MovieCard } from './MovieCard';
@@ -11,6 +9,7 @@ describe('MovieCard component', () => {
       title: 'Movie title',
       description: 'Some description',
       imgUrl:
+      /* eslint-disable max-len */
         'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg',
       imdbUrl: 'https://www.imdb.com/title/tt1375666',
       imdbId: 'tt1375666',
