@@ -25,12 +25,7 @@ export const MovieCard = ({ movie }) => (
 
       <div className="content">
         <p data-cy="MovieDescription">{movie.description}</p>
-        <a
-          href={movie.imdbUrl}
-          data-cy="MovieLink"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={movie.imdbUrl} data-cy="MovieLink">
           IMDB
         </a>
       </div>
