@@ -1,3 +1,5 @@
+[DEMO LINK](https://maksym2493.github.io/react_movies-list-js/)
+
 # Movies List
 
 > DON'T use Typescirpt in this task
@@ -13,6 +15,7 @@ You are given movies loaded from the API and initial markup. Your task is to:
 1. Keep all `data-cy` attributes to pass the tests.
 
 ## Instructions
+
 - Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
 - Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
 - Open one more terminal and run tests with `npm test` to ensure your solution is correct.
