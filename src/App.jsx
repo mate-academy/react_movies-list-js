@@ -1,13 +1,19 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 /* eslint-disable max-len */
 
 import './App.scss';
-// import moviesFromServer from './api/movies.json';
+import moviesFromServer from './api/movies.json';
+import { MovieList } from './components/MovieList/MovieList';
 
 export const App = () => (
   <div className="page">
     <div className="page-content">
       <div className="movies">
-        <div className="card" data-cy="Movie">
+
+        <MovieList movies= {moviesFromServer} />
+        {/* <div className="card" data-cy="Movie">
           <div className="card-image">
             <figure className="image is-4by3">
               <img
@@ -91,7 +97,7 @@ export const App = () => (
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
 
