@@ -4,14 +4,7 @@ export const MovieCard = ({ movie }) => (
   <div className="card" data-cy="Movie">
     {/* Movie Poster */}
     <div className="movie-poster">
-      <img
-        data-cy="MovieImage"
-        src={
-          movie.imageUrl ||
-          'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg'
-        } // Add a fallback image
-        alt={`${movie.title} poster`}
-      />
+      <img data-cy="MovieImage" src={movie.imgUrl} alt="Movie Poster" />
     </div>
 
     <div className="card-content">
