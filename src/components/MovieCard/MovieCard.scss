@@ -1,1 +1,15 @@
-// add styles here
+.card-image img {
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.content {
+  margin-top: 10px;
+}
