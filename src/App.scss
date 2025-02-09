@@ -1,3 +1,6 @@
+@forward "./components/MovieList/MovieList";
+@forward "./components/MovieCard/MovieCard";
+
 iframe {
   display: none;
 }
