@@ -1,19 +1,31 @@
-# Movies List
+# Movie List
 
-> DON'T use Typescirpt in this task
+## 🎮 About the Project
+A **React-based Movie List catalog**, dynamically rendering movies from a local JSON API.  
+Each movie entry displays essential details such as title, description, and rating.
 
-You are given movies loaded from the API and initial markup. Your task is to:
+## 🚀 Tech Stack
+- **HTML** (BEM methodology for structured markup)  
+- **CSS** (Bulma for styling)  
+- **JavaScript** (Dynamic logic)  
+- **React** (Component-based architecture)  
+- **ReactDOM** (Efficient rendering)  
+- **API** (Local JSON for fetching movie data)  
 
-1. Render movies from a given `moviesFromServer` array (for the simplicity, you can do it inside the `App` and split later).
-1. Extract a `.movies` block to a `MovieList` component.
-1. The `App` should pass the `moviesFromServer` to the `MovieList` as a `movies` prop.
-1. Extract a `.card` block to a `MovieCard` component.
-1. The `MovieList` should pass a `movie` to the `MovieCard`.
-1. Use `movie.imdbId` as a key.
-1. Keep all `data-cy` attributes to pass the tests.
+## 🛠️ Tools & Dependencies
+- **ESLint** – Ensuring code quality  
+- **Prettier** – Code formatting for readability  
+- **Cypress** – End-to-end testing  
+- **Mochawesome** – Test reporting  
+- **Babel** – JavaScript compiler for modern syntax  
 
-## Instructions
-- Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
-- Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
-- Open one more terminal and run tests with `npm test` to ensure your solution is correct.
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_movies-list-js/) and add it to the PR description.
+## 📌 Features
+✅ Displays a list of movies dynamically from a local JSON API  
+✅ Clean and modular React component structure  
+✅ Follows best practices for JSX and component rendering  
+
+## 🌐 Demo
+🔗 [Live Demo](https://AndriiZakharenko.github.io/movies-list/)
+
+## 📜 License
+This project is forked from 💻 [Mate Academy](https://github.com/mate-academy/react_movies-list-js)
