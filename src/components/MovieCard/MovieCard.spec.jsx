@@ -1,3 +1,4 @@
+/* eslint-disable import/named */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable max-len */
 
