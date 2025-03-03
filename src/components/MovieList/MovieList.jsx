@@ -1,5 +1,5 @@
 import './MovieList.scss';
-import { MovieCard } from '../MovieCard/MovieCard';
+import { MovieCard } from '../MovieCard';
 
 export const MovieList = ({ movies }) => (
   <div className="movies">
