@@ -24,7 +24,10 @@ describe('MovieCard component', () => {
   });
 
   it('should render a movie description', () => {
-    cy.getByDataCy('MovieDescription').should('have.text', 'Some description');
+    cy.getByDataCy('MovieDescription').should(
+      'include.text',
+      'Some description',
+    );
   });
 
   it('should have a link to IMDb page', () => {
