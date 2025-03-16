@@ -1,1 +1,9 @@
-// add styles here
+.card-image img {
+  object-fit: contain;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
