@@ -1,1 +1,18 @@
 // add styles here
+.card-image img {
+  object-fit: contain;
+}
+
+.card .movie-link {
+  color: #fc0; /* IMDB yellow color */
+  text-decoration: none; /* Remove the underline */
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #745a0a; /* Slightly darker shade for hover */
+  }
+
+  &:visited {
+    color: #f5a623; /* Slightly faded yellow for visited links */
+  }
+}
