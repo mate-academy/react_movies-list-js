@@ -1,1 +1,25 @@
-// add styles here
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-content .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-content .content {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-content a {
+  color: #0af;
+  text-decoration: none;
+}
