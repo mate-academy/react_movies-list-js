@@ -1,1 +1,23 @@
-// add styles here
+.card {
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-image img {
+  padding-top: 24px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 20px;
+}
+
