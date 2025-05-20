@@ -1,1 +1,7 @@
-// add styles here
+/* add styles here */
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 20px;
+  grid-gap: 20px;
+}
