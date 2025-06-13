@@ -1,7 +1,4 @@
-/* eslint-disable max-len */
-
 import './App.scss';
-// import moviesFromServer from './api/movies.json';
 
 export const App = () => (
   <div className="page">
@@ -12,7 +9,10 @@ export const App = () => (
             <figure className="image is-4by3">
               <img
                 data-cy="MovieImage"
-                src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
+                src="https://
+                m.media-amazon.com/images/
+                M/
+                MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
                 alt="Film logo"
               />
             </figure>
@@ -55,7 +55,9 @@ export const App = () => (
             <figure className="image is-4by3">
               <img
                 data-cy="MovieImage"
-                src="https://m.media-amazon.com/images/M/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_.jpg"
+                src="https://
+                m.media-amazon.com/
+                images/M/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_.jpg"
                 alt="Film logo"
               />
             </figure>

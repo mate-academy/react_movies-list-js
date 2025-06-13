@@ -1,1 +1,37 @@
 // add styles here
+.card {
+  height: 100%; // Garante que o card ocupe todo o espaço disponível na grade
+  display: flex;
+  flex-direction: column;
+
+  .card-image img {
+    object-fit: contain; // Garante que a imagem se ajuste sem cortar
+  }
+
+  .card-content {
+    flex-grow: 1; // Permite que o conteúdo se expanda para preencher o espaço
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Espaça o media e o content
+  }
+
+  .media {
+    margin-bottom: 0.5rem; // Espaço entre o título e a descrição
+  }
+
+  .media-content {
+    overflow: hidden; // Previne que o texto do título exceda a área
+  }
+
+  .title.is-8 {
+    font-size: 1.25rem; // Tamanho de fonte ajustado para título de filme
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; // Adiciona reticências se o título for muito longo
+  }
+
+  .content {
+    font-size: 0.9rem; // Tamanho de fonte para a descrição
+    margin-top: 0.5rem; // Espaço acima da descrição
+  }
+}
