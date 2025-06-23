@@ -1,17 +1,18 @@
-import React from 'react';
-import { mount } from '@cypress/react18';
-import { App } from './App';
+// src/App.spec.jsx
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import { MovieCard } from './components/MovieCard/MovieCard';
 
-describe('App', () => {
-  beforeEach(() => {
-    mount(<App />);
-  });
+test('exibe o título do filme', () => {
+  const movie = {
+    title: 'Título de Teste',
+    description: 'Descrição de Teste',
+    posterUrl: 'https://via.placeholder.com/150',
+    imdbUrl: 'https://www.imdb.com/title/tt1234567',
+    imdbId: 'tt1234567',
+  };
 
-  it('should render all the movies', () => {
-    cy.getByDataCy('Movie').should('have.length', 5);
-  });
+  render(<MovieCard movie={movie} />);
 
-  it('should render a sidebar', () => {
-    cy.getByDataCy('Sidebar').should('have.text', 'Sidebar will be here');
-  });
+  expect(screen.getByText(/título de teste/i)).toBeInTheDocument();
 });

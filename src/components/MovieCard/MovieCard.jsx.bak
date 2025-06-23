@@ -1,0 +1,8 @@
+<a
+  href={`https://www.imdb.com/title/${movie.imdbId}`}
+  target="_blank"
+  rel="noreferrer"
+  data-cy="movieLink"
+>
+  View on IMDb
+</a>

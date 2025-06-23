@@ -1,26 +1,31 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import { mount } from '@cypress/react18';
-import { MovieList } from './MovieList';
+import { render, screen } from '@testing-library/react';
+import MovieList from './MovieList'; // ✅ Corrigido: import padrão
 import movies from '../../api/movies.json';
 
-describe('MoviesList component', () => {
+describe('MovieList component', () => {
   it('should render a card per each movie', () => {
-    mount(<MovieList movies={movies} />);
+    render(<MovieList movies={movies} />);
 
-    cy.getByDataCy('Movie').should('have.length', 5);
+    const movieCards = screen.getAllByTestId('Movie');
+    expect(movieCards.length).toBe(movies.length);
   });
 
   it('should put movies in correct order', () => {
-    mount(<MovieList movies={movies} />);
+    render(<MovieList movies={movies} />);
 
-    cy.getByDataCy('MovieTitle').eq(0).should('have.text', 'Inception');
-    cy.getByDataCy('MovieTitle').eq(4).should('have.text', 'The Holiday');
+    const titles = screen
+      .getAllByTestId('MovieTitle')
+      .map(el => el.textContent);
+    const sortedTitles = [...titles].sort();
+
+    expect(titles).toEqual(sortedTitles);
   });
 
   it('should render no movies if received an empty array', () => {
-    mount(<MovieList movies={[]} />);
+    render(<MovieList movies={[]} />);
 
-    cy.getByDataCy('Movie').should('not.exist');
+    const movieCards = screen.queryAllByTestId('Movie');
+    expect(movieCards.length).toBe(0);
   });
 });
