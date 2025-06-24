@@ -16,4 +16,19 @@ You are given movies loaded from the API and initial markup. Your task is to:
 - Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
 - Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
 - Open one more terminal and run tests with `npm test` to ensure your solution is correct.
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_movies-list-js/) and add it to the PR description.
+- Replace `<your_account>` with your Github username in the [DEMO LINK](https://Ezero1.github.io/react_movies-list-js/) and add it to the PR description.
+
+
+
+Вам надано фільми, завантажені з API,    та початкову розмітку. Ваша задача полягає в наступному:
+
+Відрендерити фільми з заданого масиву moviesFromServer (для простоти, ви можете зробити це всередині додатку, а потім розділити його).
+Витягти блок .movies у компонент MovieList.
+Додаток має передати moviesFromServer до MovieList як реквізит фільмів.
+Витягніть блок .card до компонента MovieCard.
+MovieList має передати фільм до MovieCard.
+Використовуйте movie.imdbId як ключ.
+Зберігайте всі атрибути data-cy для проходження тестів.
+Інструкції
+
+Translated with DeepL.com (free version)
