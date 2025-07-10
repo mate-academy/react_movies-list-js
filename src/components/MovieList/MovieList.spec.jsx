@@ -6,20 +6,20 @@ import movies from '../../api/movies.json';
 
 describe('MoviesList component', () => {
   it('should render a card per each movie', () => {
-    mount(<MovieList movies={movies} />);
+    mount(<MovieList moviesFromServer={movies} />);
 
     cy.getByDataCy('Movie').should('have.length', 5);
   });
 
   it('should put movies in correct order', () => {
-    mount(<MovieList movies={movies} />);
+    mount(<MovieList moviesFromServer={movies} />);
 
     cy.getByDataCy('MovieTitle').eq(0).should('have.text', 'Inception');
     cy.getByDataCy('MovieTitle').eq(4).should('have.text', 'The Holiday');
   });
 
   it('should render no movies if received an empty array', () => {
-    mount(<MovieList movies={[]} />);
+    mount(<MovieList moviesFromServer={[]} />);
 
     cy.getByDataCy('Movie').should('not.exist');
   });
