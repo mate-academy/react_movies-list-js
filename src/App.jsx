@@ -7,10 +7,10 @@ import { MovieList } from './components/MovieList/MovieList';
 export const App = () => (
   <div className="page">
     <div className="page-content">
-<MovieList movie = {MovieList}/>
-    <div className="sidebar" data-cy="Sidebar">
-      Sidebar will be here
+      <MovieList movies={moviesFromServer} />
+      <div className="sidebar" data-cy="Sidebar">
+        Sidebar will be here
+      </div>
     </div>
-  </div>
   </div>
 );
