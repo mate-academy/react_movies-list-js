@@ -1,10 +1,9 @@
 import React from 'react';
-import { mount } from '@cypress/react18';
 import { App } from './App';
 
 describe('App', () => {
   beforeEach(() => {
-    mount(<App />);
+    cy.mount(<App />);
   });
 
   it('should render all the movies', () => {
