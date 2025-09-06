@@ -1,98 +1,61 @@
 /* eslint-disable max-len */
 
 import './App.scss';
-// import moviesFromServer from './api/movies.json';
+import { MovieList } from './components/MovieList/MovieList';
+
+const moviesFromServer = [
+  {
+    title: 'Inception',
+    description:
+      'Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.',
+    imgUrl:
+      'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg',
+    imdbUrl: 'https://www.imdb.com/title/tt1375666',
+    imdbId: 'tt1375666',
+  },
+  {
+    title: 'Love Actually',
+    description:
+      'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
+    imgUrl:
+      'https://m.media-amazon.com/images/M/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_.jpg',
+    imdbUrl: 'https://www.imdb.com/title/tt0314331',
+    imdbId: 'tt0314331',
+  },
+  {
+    title: 'The Day After Tomorrow',
+    description:
+      'Jack Hall, paleoclimatologist, must make a daring trek from Washington, D.C. to New York City to reach his son, trapped in the cross-hairs of a sudden international storm which plunges the planet into a new Ice Age.',
+    imgUrl:
+      'https://m.media-amazon.com/images/M/MV5BMTY4YWMzMTMtZjUyOS00OGY1LTljMGUtOWU5ZjYzMjc2ZTMwXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SY1000_CR0,0,701,1000_AL_.jpg',
+    imdbUrl: 'https://www.imdb.com/title/tt0319262',
+    imdbId: 'tt0319262',
+  },
+  {
+    title: 'Rogue One',
+    description:
+      'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
+    imgUrl:
+      'https://m.media-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SY1000_SX675_AL_.jpg',
+    imdbUrl: 'https://www.imdb.com/title/tt3748528',
+    imdbId: 'tt3748528',
+  },
+  {
+    title: 'The Holiday',
+    description:
+      "Two women troubled with guy-problems swap homes in each other's countries, where they each meet a local guy and fall in love.",
+    imgUrl:
+      'https://m.media-amazon.com/images/M/MV5BMTI1MDk4MzA2OF5BMl5BanBnXkFtZTYwMjQ3NDc3._V1_.jpg',
+    imdbUrl: 'https://www.imdb.com/title/tt0457939',
+    imdbId: 'tt0457939',
+  },
+];
 
 export const App = () => (
   <div className="page">
     <div className="page-content">
-      <div className="movies">
-        <div className="card" data-cy="Movie">
-          <div className="card-image">
-            <figure className="image is-4by3">
-              <img
-                data-cy="MovieImage"
-                src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
-                alt="Film logo"
-              />
-            </figure>
-          </div>
-
-          <div className="card-content">
-            <div className="media">
-              <div className="media-left">
-                <figure className="image is-48x48">
-                  <img src="images/imdb-logo.jpeg" alt="imdb" />
-                </figure>
-              </div>
-
-              <div className="media-content">
-                <p className="title is-8" data-cy="MovieTitle">
-                  Inception
-                </p>
-              </div>
-            </div>
-
-            <div className="content">
-              <p data-cy="MovieDescription">
-                Follows the lives of eight very different couples in dealing
-                with their love lives in various loosely interrelated tales all
-                set during a frantic month before Christmas in London, England.
-              </p>
-
-              <a
-                href="https://www.imdb.com/title/tt1375666"
-                data-cy="MovieLink"
-              >
-                IMDB
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="card" data-cy="Movie">
-          <div className="card-image">
-            <figure className="image is-4by3">
-              <img
-                data-cy="MovieImage"
-                src="https://m.media-amazon.com/images/M/MV5BMTY4NjQ5NDc0Nl5BMl5BanBnXkFtZTYwNjk5NDM3._V1_.jpg"
-                alt="Film logo"
-              />
-            </figure>
-          </div>
-
-          <div className="card-content">
-            <div className="media">
-              <div className="media-left">
-                <figure className="image is-48x48">
-                  <img src="images/imdb-logo.jpeg" alt="imdb" />
-                </figure>
-              </div>
-
-              <div className="media-content">
-                <p className="title is-8" data-cy="MovieTitle">
-                  Love Actually
-                </p>
-              </div>
-            </div>
-
-            <div className="content">
-              <p data-cy="MovieDescription">
-                A thief who steals corporate secrets through the use of
-                dream-sharing technology is given the inverse task of planting
-                an idea into the mind of a C.E.O.
-              </p>
-
-              <a
-                href="https://www.imdb.com/title/tt0314331"
-                data-cy="MovieLink"
-              >
-                IMDB
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* тут рендерим список фильмов */}
+      <MovieList movies={moviesFromServer} />
     </div>
 
     <div className="sidebar" data-cy="Sidebar">
