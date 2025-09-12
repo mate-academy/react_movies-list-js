@@ -1,3 +1,10 @@
+import { MovieCard } from '../MovieCard/index';
 import './MovieList.scss';
 
-export const MovieList = () => <>Put the list here</>;
+export const MovieList = ({ movies }) => (
+  <ul className="Movie List">
+    {movies.map(movie => (
+      <MovieCard movie={movie} key={movie.imdbId} />
+    ))}
+  </ul>
+);
