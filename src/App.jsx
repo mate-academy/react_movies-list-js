@@ -6,7 +6,7 @@ import moviesFromServer from './api/movies.json';
 
 export const App = () => (
   <div className="App">
-    <MovieList movies={moviesFromServer}/>
+    <MovieList movies={moviesFromServer} />
     <div className="sidebar" data-cy="Sidebar">
       Sidebar will be here
     </div>
