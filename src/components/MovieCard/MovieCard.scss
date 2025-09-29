@@ -1,1 +1,38 @@
 // add styles here
+.card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media-left {
+  margin-right: 12px;
+}
+
+.media-content {
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 12px;
+}
