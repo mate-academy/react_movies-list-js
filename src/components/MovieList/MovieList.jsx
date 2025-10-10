@@ -1,3 +1,3 @@
 import './MovieList.scss';
 
-export const MovieList = () => <>pfa</>;
+export const MovieList = () => <>pfaа</>;
