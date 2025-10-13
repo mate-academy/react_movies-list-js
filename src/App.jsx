@@ -8,7 +8,7 @@ export const App = () => {
   return(
     <>
     <div className='page' data-cy="App">
-      <div className='page-cotent'>
+      <div className='page-content'>
         <MovieList movies={moviesFromServer}/>
       </div>
 

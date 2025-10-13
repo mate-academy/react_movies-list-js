@@ -7,9 +7,10 @@ export const MovieList = ({movies}) => {
   return (
      <div className='movies'>
       {movies.map(movie=>{
+        return
         <MovieCard
         key={movie.imdbId}
-        movie ={movie}/>
+        movie={movie}/>
       })}
 
      </div>
