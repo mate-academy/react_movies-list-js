@@ -1,7 +1,7 @@
 import './MovieCard.scss';
 import React from 'react';
 
-export const MovieCard = ({movies}) => {
+export const MovieCard = ({movie}) => {
 
   return (
    <div className="card" data-cy="Movie">
