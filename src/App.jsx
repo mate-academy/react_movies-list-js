@@ -1,7 +1,11 @@
 /* eslint-disable max-len */
 
 import './App.scss';
-// import moviesFromServer from './api/movies.json';
+import moviesFromServer from './api/movies.json';
+
+import MovieList from './components/MovieList/MovieList';
+
+<MovieList movies={moviesFromServer} />;
 
 export const App = () => (
   <div className="page">
