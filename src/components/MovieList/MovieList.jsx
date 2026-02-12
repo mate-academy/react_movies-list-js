@@ -10,4 +10,3 @@ export const MovieList = ({ movies }) => {
     </div>
   );
 };
-
