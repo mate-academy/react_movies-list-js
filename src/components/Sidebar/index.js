@@ -1,1 +1,1 @@
-export * from './Sidebar.scss';
+export * from './Sidebar';
