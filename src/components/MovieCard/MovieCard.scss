@@ -1,1 +1,27 @@
 // add styles here
+.card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin:  0 5px ;
+}
+
+.content {
+  font-size: 14px;
+}
