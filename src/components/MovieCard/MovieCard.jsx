@@ -1,3 +1,37 @@
 import './MovieCard.scss';
 
-export const MovieCard = () => <>Put the card here</>;
+export const MovieCard = ({ movie }) => {
+  const { title, description, imgUrl, imdbUrl } = movie;
+
+  return (
+    <div className="card" data-cy="Movie">
+      <div className="card-image">
+        <figure className="image is-4by3">
+          <img data-cy="MovieImage" src={imgUrl} alt={title} />
+        </figure>
+      </div>
+
+      <div className="card-content">
+        <div className="media">
+          <div className="media-left">
+            <figure className="image is-48x48">
+              <img src="images/imdb-logo.jpeg" alt="imdb" />
+            </figure>
+          </div>
+
+          <div className="media-content">
+            <h2 data-cy="MovieTitle">{title}</h2>
+          </div>
+        </div>
+
+        <div className="content">
+          <p data-cy="MovieDescription">{description}</p>
+
+          <a href={imdbUrl} data-cy="MovieLink">
+            IMDB
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
