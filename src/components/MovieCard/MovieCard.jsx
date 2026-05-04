@@ -1,7 +1,7 @@
 import './MovieCard.scss';
 
-export const MovieCard = proosMovie => {
-  const { title, description, imgUrl, imdbUrl } = proosMovie.movie;
+export const MovieCard = propsMovie => {
+  const { title, description, imgUrl, imdbUrl } = propsMovie.movie;
 
   return (
     <div className="card" data-cy="Movie">
