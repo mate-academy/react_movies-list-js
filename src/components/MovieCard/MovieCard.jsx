@@ -1,11 +1,12 @@
 import './MovieCard.scss';
 
 export const MovieCard = ({ movie }) => (
-  <div className='card'>
-  <p>{movie.title}</p>
-  <p>{movie.description}</p>
-
-  <img src={movie.imgUrl}/>
-  <a href={movie.imdbUrl}></a>
+  <div className="card" data-cy="Movie">
+    <p data-cy="MovieTitle">{movie.title}</p>
+    <p data-cy="MovieDescription">{movie.description}</p>
+    <img data-cy="MovieImage" src={movie.imgUrl} alt="Film logo" />
+    <a href={movie.imdbUrl} data-cy="MovieLink">
+      IMDB
+    </a>
   </div>
 );
