@@ -1,3 +1,11 @@
 import './MovieCard.scss';
 
-export const MovieCard = () => <>Put the card here</>;
+export const MovieCard = ({ movie }) => (
+  <div className='card'>
+  <p>{movie.title}</p>
+  <p>{movie.description}</p>
+
+  <img src={movie.imgUrl}/>
+  <a href={movie.imdbUrl}></a>
+  </div>
+);
