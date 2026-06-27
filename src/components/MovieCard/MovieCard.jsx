@@ -1,7 +1,4 @@
-// import './MovieCard.scss';
-
-// export const MovieCard = () => <>Put the card here</>;
-// MovieCard.jsx
+// src/components/MovieCard/MovieCard.jsx
 import './MovieCard.scss';
 
 export const MovieCard = ({ movie }) => {
@@ -9,11 +6,7 @@ export const MovieCard = ({ movie }) => {
     <div className="card" data-cy="Movie">
       <div className="card-image">
         <figure className="image is-4by3">
-          <img
-            data-cy="MovieImage"
-            src={movie.imgUrl}
-            alt={movie.title}
-          />
+          <img data-cy="MovieImage" src={movie.imgUrl} alt={movie.title} />
         </figure>
       </div>
 
@@ -33,9 +26,7 @@ export const MovieCard = ({ movie }) => {
         </div>
 
         <div className="content">
-          <p data-cy="MovieDescription">
-            {movie.description}
-          </p>
+          <p data-cy="MovieDescription">{movie.description}</p>
 
           <a
             href={`https://www.imdb.com/title/${movie.imdbId}`}
