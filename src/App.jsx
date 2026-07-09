@@ -2,11 +2,21 @@
 
 import './App.scss';
 // import moviesFromServer from './api/movies.json';
+import moviesFromServer from './api/movies.json';
+import { MovieList } from './components/MovieList';
 
 export const App = () => (
   <div className="page">
     <div className="page-content">
-      <div className="movies">
+      <MovieList movies={moviesFromServer} />
+    </div>
+
+    <div className="sidebar" data-cy="Sidebar">
+      Sidebar will be here
+    </div>
+  </div>
+);
+/* <div className="movies">
         <div className="card" data-cy="Movie">
           <div className="card-image">
             <figure className="image is-4by3">
@@ -93,10 +103,4 @@ export const App = () => (
           </div>
         </div>
       </div>
-    </div>
-
-    <div className="sidebar" data-cy="Sidebar">
-      Sidebar will be here
-    </div>
-  </div>
-);
+    // </div> */
