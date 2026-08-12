@@ -1,8 +1,7 @@
+import React from 'react';
 import './MovieCard.scss';
 
-export const MovieCard = ({ movie, info }) => {
-  const currentMovie = movie || info;
-
+export const MovieCard = ({ movie }) => {
   return (
     <div className="card" data-cy="Movie">
       <div className="card-image">
@@ -10,7 +9,7 @@ export const MovieCard = ({ movie, info }) => {
           <img
             data-cy="MovieImage"
             // eslint-disable-next-line max-len
-            src={currentMovie.imgUrl}
+            src={movie.imgUrl}
             alt="Film logo"
           />
         </figure>
@@ -26,16 +25,16 @@ export const MovieCard = ({ movie, info }) => {
 
           <div className="media-content">
             <p className="title is-8" data-cy="MovieTitle">
-              {currentMovie.title}
+              {movie.title}
             </p>
           </div>
         </div>
 
         <div className="content">
-          <p data-cy="MovieDescription">{currentMovie.description}</p>
+          <p data-cy="MovieDescription">{movie.description}</p>
 
-          <a href={currentMovie.imdbUrl} data-cy="MovieLink">
-            {currentMovie.imdbId}
+          <a href={movie.imdbUrl} data-cy="MovieLink">
+            {movie.imdbId}
           </a>
         </div>
       </div>
