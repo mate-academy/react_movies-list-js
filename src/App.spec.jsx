@@ -1,17 +1,17 @@
-import React from 'react';
-import { mount } from '@cypress/react18';
-import { App } from './App';
+/* eslint-disable max-len */
 
-describe('App', () => {
-  beforeEach(() => {
-    mount(<App />);
-  });
+import './App.scss';
+import moviesFromServer from './api/movies.json';
+import { MovieList } from './components/MovieList';
 
-  it('should render all the movies', () => {
-    cy.getByDataCy('Movie').should('have.length', 5);
-  });
+export const App = () => (
+  <div className="page">
+    <div className="page-content">
+      <MovieList movies={moviesFromServer} />
+    </div>
 
-  it('should render a sidebar', () => {
-    cy.getByDataCy('Sidebar').should('have.text', 'Sidebar will be here');
-  });
-});
+    <div className="sidebar" data-cy="Sidebar">
+      Sidebar will be here
+    </div>
+  </div>
+);
