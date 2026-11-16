@@ -3,11 +3,9 @@ import { MovieCard } from '../MovieCard';
 
 export const MovieList = ({ movies }) => {
   return (
-    <div className="movies" data-cy="MovieList">
+    <div className="movies" data-cy="movies">
       {movies.map((movie) => {
-        return (
-          <MovieCard key={movie.imdbId} movie={movie} />
-        );
+        return <MovieCard key={movie.imdbId} movie={movie} />;
       })}
     </div>
   );
