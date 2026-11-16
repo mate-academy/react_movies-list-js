@@ -3,7 +3,7 @@ import { MovieCard } from '../MovieCard';
 
 export const MovieList = ({ movies }) => {
   return (
-    <div className="movies">
+    <div className="movies" data-cy="MovieList">
       {movies.map((movie) => {
         return (
           <MovieCard key={movie.imdbId} movie={movie} />
