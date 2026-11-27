@@ -10,7 +10,7 @@ You are given movies loaded from the API and initial markup. Your task is to:
 1. Extract a `.card` block to a `MovieCard` component.
 1. The `MovieList` should pass a `movie` to the `MovieCard`.
 1. Use `movie.imdbId` as a key.
-1. Keep all `data-cy` attributes to pass the tests.
+1. Keep `data-cy` attributes: data-cy="Sidebar", data-cy="Movie", data-cy="MovieImage", data-cy="MovieTitle", data-cy="MovieDescription", data-cy="MovieDescription" to pass the tests.
 
 ## Instructions
 - Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
